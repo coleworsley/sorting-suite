@@ -23,5 +23,4 @@ function quickSort(arr) {
   return quickSort(arrayLeft).concat(arr[0], quickSort(arrayRight));
 }
 
-
 export default quickSort;

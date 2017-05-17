@@ -2,7 +2,6 @@ function mergeSort( array ) {
   if ( array.length <= 1) {
     return array;
   }
-
   let a = array.splice(0, Math.floor(array.length / 2));
   let b = array;
 
@@ -10,7 +9,6 @@ function mergeSort( array ) {
 }
 
 function merge( a, b ) {
-
   let array = [];
 
   while ((a.length || 0) + (b.length || 0) > 0) {

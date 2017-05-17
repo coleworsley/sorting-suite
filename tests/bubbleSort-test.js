@@ -35,12 +35,11 @@ describe('Bubble Sort', () => {
   it('should sort positive and negative numbers', () => {
     const arr = [-50000, -10, 100000000, -2, 5, 90, -90, 5]
 
-    expect(bubbleSort(arr)).to.deep.equal(arr.sort());
+    expect(bubbleSort(arr)).to.deep.equal(arr.sort((a, b) => a - b));
   });
 
   it('should sort large arrays', () => {
     const ranArray = genRanNum(3000);
-
     const compSorted = [...ranArray].sort((a, b) => a - b);
 
     expect(bubbleSort(ranArray)).to.deep.equal(compSorted);

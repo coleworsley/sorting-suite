@@ -28,7 +28,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshuajhun/tdd.git"
-  },
-  "homepage": "https://github.com/joshuajhun/tdd#readme"
+    "url": "git+https://github.com/coleworsley/sorting-suite"
+  }
 }

@@ -19,15 +19,17 @@ describe('Quick Sort', () => {
     expect(quickSort(arr)).to.deep.equal(['a', 'c', 'd', 'f', 'p']);
   });
 
-  it.skip('should throw an error when the argument is not an array', () => {
-    expect(quickSort('something')).to.equal('idk');
-  });
-
   it('should move min number to front', () => {
     var randomArray = genRanNum(5)
     var min = Math.min(...randomArray);
 
     expect(quickSort(randomArray)[0]).to.equal(min);
+  });
+
+  it('should sort positive and negative numbers', () => {
+    const arr = [ -15, 4, -3, 2, -1 ];
+
+    expect(quickSort(arr)).to.deep.equal([-15, -3, -1, 2, 4]);
   });
 
   it('should sort large arrays', () => {
