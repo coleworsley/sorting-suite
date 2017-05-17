@@ -1,4 +1,4 @@
-function split( array ) {
+function mergeSort( array ) {
   if ( array.length <= 1) {
     return array;
   }
@@ -6,7 +6,7 @@ function split( array ) {
   let a = array.splice(0, Math.floor(array.length / 2));
   let b = array;
 
-  return merge(split(a), split(b));
+  return merge(mergeSort(a), mergeSort(b));
 }
 
 function merge( a, b ) {
@@ -23,4 +23,4 @@ function merge( a, b ) {
   return array;
 }
 
-export { merge, split };
+export { merge, mergeSort };

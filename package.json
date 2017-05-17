@@ -1,6 +1,6 @@
 {
-  "name": "sorting-suite",
-  "version": "1.0.0",
+  "name": "@coleworsley/sorting-suite",
+  "version": "0.0.1",
   "description": "sort some stuff",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,7 @@
     "test": "mocha --compilers js:babel-core/register tests"
   },
   "keywords": [],
-  "author": "",
+  "author": "Cole Worsley",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -29,9 +29,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshuajhun/tdd.git"
-  },
-  "bugs": {
-    "url": "https://github.com/joshuajhun/tdd/issues"
   },
   "homepage": "https://github.com/joshuajhun/tdd#readme"
 }

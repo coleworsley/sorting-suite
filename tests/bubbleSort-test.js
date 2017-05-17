@@ -8,9 +8,9 @@ describe('Bubble Sort', () => {
   });
 
   it('should sort an unsorted array', () => {
-    const arr = [5,4,3,2,1];
+    const arr = [5, 4, 3, 2, 1];
 
-    expect(bubbleSort(arr)).to.deep.equal([1,2,3,4,5]);
+    expect(bubbleSort(arr)).to.deep.equal([1, 2, 3, 4, 5]);
   });
 
   it('should sort an array of letters', () => {
@@ -19,21 +19,29 @@ describe('Bubble Sort', () => {
     expect(bubbleSort(arr)).to.deep.equal(['a', 'c', 'd', 'f', 'p']);
   });
 
-  it.skip('should throw an error when the argument is not an array', () => {
-    expect(bubbleSort('something')).to.equal('idk');
-  });
-
   it('should move min number to front', () => {
-    var randomArray = genRanNum(5)
-    var min = Math.min(...randomArray);
+    const randomArray = genRanNum(5)
+    const min = Math.min(...randomArray);
 
     expect(bubbleSort(randomArray)[0]).to.equal(min);
   });
 
+  it('should return the argument if it is not a valid array', () => {
+    const str = 'test';
+
+    expect(bubbleSort(str)).to.equal(`Error: ${str} is not a valid array.`);
+  });
+
+  it('should sort positive and negative numbers', () => {
+    const arr = [-50000, -10, 100000000, -2, 5, 90, -90, 5]
+
+    expect(bubbleSort(arr)).to.deep.equal(arr.sort());
+  });
+
   it('should sort large arrays', () => {
-    var ranArray = genRanNum(3000);
-    // 13000 max
-    var compSorted = [...ranArray].sort((a, b) => a - b);
+    const ranArray = genRanNum(3000);
+
+    const compSorted = [...ranArray].sort((a, b) => a - b);
 
     expect(bubbleSort(ranArray)).to.deep.equal(compSorted);
   });

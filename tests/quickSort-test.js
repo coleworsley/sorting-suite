@@ -8,9 +8,9 @@ describe('Quick Sort', () => {
   });
 
   it('should sort an unsorted array', () => {
-    const arr = [5,4,3,2,1];
+    const arr = [5, 4, 3, 2, 1];
 
-    expect(quickSort(arr)).to.deep.equal([1,2,3,4,5]);
+    expect(quickSort(arr)).to.deep.equal([1, 2, 3, 4, 5]);
   });
 
   it('should sort an array of letters', () => {
@@ -31,7 +31,7 @@ describe('Quick Sort', () => {
   });
 
   it('should sort large arrays', () => {
-    var ranArray = genRanNum(50000);
+    var ranArray = genRanNum(75000);
     var compSorted = [...ranArray].sort((a, b) => a - b);
 
     expect(quickSort(ranArray)).to.deep.equal(compSorted);

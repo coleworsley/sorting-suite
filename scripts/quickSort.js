@@ -4,7 +4,6 @@ function quickSort(arr) {
   let arrayRight = [];
   let arrayLeft = [];
 
-  debugger
   if (arr.length <= 1) {
     return arr;
   }
@@ -13,13 +12,13 @@ function quickSort(arr) {
     if ((arr[p] < arr[i] && p > i) ||
         (arr[p] > arr[i] && p < i)) {
 
-       [arr[p], arr[i], i, p] = [arr[i], arr[p], p, i];
-       increment = increment * -1;
+      [arr[p], arr[i], i, p] = [arr[i], arr[p], p, i];
+      increment = increment * -1;
     }
   }
 
   arrayLeft.push(...arr.splice(0, p));
-  arrayRight.push(...arr.splice(1, arr.length - 1));
+  arrayRight.push(...arr.splice(1));
 
   return quickSort(arrayLeft).concat(arr[0], quickSort(arrayRight));
 }
