@@ -1,7 +1,7 @@
 {
-  "name": "TDD",
+  "name": "sorting-suite",
   "version": "1.0.0",
-  "description": "",
+  "description": "sort some stuff",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -18,5 +18,20 @@
     "babel-preset-env": "^1.1.8",
     "babel-preset-es2015": "^6.22.0",
     "chai": "^3.5.0"
-  }
+  },
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.22.0",
+    "chai": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuajhun/tdd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuajhun/tdd/issues"
+  },
+  "homepage": "https://github.com/joshuajhun/tdd#readme"
 }
