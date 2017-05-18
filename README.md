@@ -1,2 +1,4 @@
 # Sorting Algos
-Run NPM Install and DO STUFF!!!!
+1. Navigate to your project
+2. Run npm install @coleworsley/sorting-suite --save
+3. In your project import { ex. bubbleSort } from 'sorting-suite/index.js'
