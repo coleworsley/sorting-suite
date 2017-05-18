@@ -1,8 +1,8 @@
-function quickSort(arr) {
+const quickSort = (arr) => {
   let increment = 1;
   let p = arr.length - 1;
-  let arrayRight = [];
-  let arrayLeft = [];
+  const arrayRight = [];
+  const arrayLeft = [];
 
   if (arr.length <= 1) {
     return arr;
@@ -20,7 +20,7 @@ function quickSort(arr) {
   arrayLeft.push(...arr.splice(0, p));
   arrayRight.push(...arr.splice(1));
 
-  return quickSort(arrayLeft).concat(arr[0], quickSort(arrayRight));
+  return [...arrayLeft, arr[0], ...arrayRight];
 }
 
 export default quickSort;
