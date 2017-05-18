@@ -10,4 +10,4 @@ function genRanNum (count) {
   return numArray;
 }
 
-export default genRanNum
+export default genRanNum;

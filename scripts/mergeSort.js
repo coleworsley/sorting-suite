@@ -1,4 +1,4 @@
-function mergeSort( array ) {
+const mergeSort = ( array ) => {
   if ( array.length <= 1) {
     return array;
   }
@@ -8,7 +8,7 @@ function mergeSort( array ) {
   return merge(mergeSort(a), mergeSort(b));
 }
 
-function merge( a, b ) {
+const merge = ( a, b ) => {
   let array = [];
 
   while ((a.length || 0) + (b.length || 0) > 0) {
